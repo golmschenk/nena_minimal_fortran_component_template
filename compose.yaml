@@ -1,0 +1,11 @@
+services:
+  component_pipeline:
+    build:
+      context: .
+      dockerfile: Containerfile
+    working_dir: /workspace
+    environment:
+      NENA_IN_EVENT_PIPELINE: "false"
+    volumes:
+      - ./input_events:/workspace/input_events:ro
+      - ./output_events:/workspace/output_events
