@@ -3,6 +3,7 @@ services:
     build:
       context: .
       dockerfile: Containerfile
+    image: docker.io/golmschenk/nena_minimal_fortran_component_template:1.0.0
     working_dir: /workspace
     environment:
       NENA_IN_EVENT_PIPELINE: "false"
