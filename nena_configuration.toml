@@ -1,0 +1,5 @@
+component_pipeline_name = 'minimal_fortran_component_template'
+container_image_uri = 'docker.io/golmschenk/nena_minimal_fortran_component_template:1.0.0'
+input_event_source_names = ['working_group_a_component_pipeline']
+required_s3_buckets = ['working_group_a_bucket', 'working_group_b_bucket']
+upper_bound_run_time__seconds = 60
